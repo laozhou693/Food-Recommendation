@@ -1,0 +1,5 @@
+C:\Project\FoodRecommendationSystem.DAL\obj\Debug\net8.0\FoodRecommendationSystem.DAL.csproj.AssemblyReference.cache
+C:\Project\FoodRecommendationSystem.DAL\obj\Debug\net8.0\FoodRecommendationSystem.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\FoodRecommendationSystem.DAL\obj\Debug\net8.0\FoodRecommendationSystem.DAL.AssemblyInfoInputs.cache
+C:\Project\FoodRecommendationSystem.DAL\obj\Debug\net8.0\FoodRecommendationSystem.DAL.AssemblyInfo.cs
+C:\Project\FoodRecommendationSystem.DAL\obj\Debug\net8.0\FoodRecommendationSystem.DAL.csproj.CoreCompileInputs.cache

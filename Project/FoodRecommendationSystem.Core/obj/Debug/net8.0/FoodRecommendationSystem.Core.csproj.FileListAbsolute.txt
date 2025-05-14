@@ -1,0 +1,4 @@
+C:\Project\FoodRecommendationSystem.Core\obj\Debug\net8.0\FoodRecommendationSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\FoodRecommendationSystem.Core\obj\Debug\net8.0\FoodRecommendationSystem.Core.AssemblyInfoInputs.cache
+C:\Project\FoodRecommendationSystem.Core\obj\Debug\net8.0\FoodRecommendationSystem.Core.AssemblyInfo.cs
+C:\Project\FoodRecommendationSystem.Core\obj\Debug\net8.0\FoodRecommendationSystem.Core.csproj.CoreCompileInputs.cache
