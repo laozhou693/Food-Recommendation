@@ -1,0 +1,44 @@
+<view class="container">
+  <!-- 美食图片 -->
+  <image src="{{foodDetail.image}}" class="food-image" mode="widthFix"></image>
+  
+  <!-- 美食基本信息 -->
+  <view class="food-info">
+    <view class="food-name">{{foodDetail.name}}</view>
+    <view class="food-rating">
+      <text>⭐ {{foodDetail.rating}}</text>
+      <text class="distance">{{foodDetail.distance}}km</text>
+    </view>
+    <view class="food-tags">
+      <text wx:for="{{foodDetail.tags}}" wx:key="*this">{{item}}</text>
+    </view>
+    <view class="food-desc">{{foodDetail.description}}</view>
+  </view>
+  
+  <!-- 价格比较 -->
+  <view class="price-section">
+    <view class="section-title">平台比价</view>
+    <view class="price-comparison">
+      <view class="platform-card" bindtap="navigateToPlatform" data-platform="eleme">
+        <image src="/images/eleme-logo.png" class="platform-logo"></image>
+        <view class="price">¥{{foodDetail.prices.eleme}}</view>
+        <view class="action">去饿了么下单</view>
+      </view>
+      <view class="platform-card" bindtap="navigateToPlatform" data-platform="meituan">
+        <image src="/images/meituan-logo.png" class="platform-logo"></image>
+        <view class="price">¥{{foodDetail.prices.meituan}}</view>
+        <view class="action">去美团下单</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 商家信息 -->
+  <view class="store-section">
+    <view class="section-title">商家信息</view>
+    <view class="store-info">
+      <text>地址: {{foodDetail.store.address}}</text>
+      <text>营业时间: {{foodDetail.store.businessHours}}</text>
+      <text>联系电话: {{foodDetail.store.phone}}</text>
+    </view>
+  </view>
+</view>

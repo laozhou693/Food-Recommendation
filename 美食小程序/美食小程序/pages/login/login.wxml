@@ -1,0 +1,23 @@
+<view class="login-container">
+  <view class="logo">
+  </view>
+
+  <form bindsubmit="handleLogin">
+    <view class="input-group">
+      <input name="username" type="text" placeholder="请输入用户名" value="{{username}}" bindinput="handleUsernameInput" />
+    </view>
+
+    <view class="input-group">
+      <input name="password" type="password" placeholder="请输入密码" value="{{password}}" bindinput="handlePasswordInput" />
+    </view>
+
+    <button form-type="submit" type="primary" class="login-btn">
+      登录
+    </button>
+  </form>
+
+  <view class="footer">
+    <text>还没有账号？</text>
+    <navigator url="/pages/register/register" open-type="navigate">立即注册</navigator>
+  </view>
+</view>
