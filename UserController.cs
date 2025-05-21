@@ -47,8 +47,28 @@ namespace FoodRecommendationSystem.Controllers
 
 
 
+        /// <summary>
+        /// 用户注册接口
+        /// </summary>
+        [HttpPost("register")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Register([FromBody] RegisterDto dto)
+        {
+            var exists = await _userRepository.GetByUsernameAsync(dto.Username);
+            if (exists != null)
+                return Conflict(new { message = "用户名已存在" });
 
-
+            var user = new User
+            {
+                Id = ObjectId.GenerateNewId().ToString(),
+                Username = dto.Username,
+                Password = dto.Password,
+                Nickname = dto.Nickname
+            };
+            await _userRepository.CreateAsync(user);
+            return StatusCode(201);
+        }
+    
 
         /// <summary>
         /// 获取用户个人资料
