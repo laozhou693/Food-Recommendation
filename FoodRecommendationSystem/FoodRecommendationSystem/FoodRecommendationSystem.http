@@ -1,6 +1,0 @@
-@FoodRecommendationSystem_HostAddress = http://localhost:5199
-
-GET {{FoodRecommendationSystem_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
