@@ -62,8 +62,7 @@ namespace FoodRecommendationSystem.Controllers
             {
                 Id = ObjectId.GenerateNewId().ToString(),
                 Username = dto.Username,
-                Password = dto.Password,
-                Nickname = dto.Nickname
+                Password = dto.Password
             };
             await _userRepository.CreateAsync(user);
             return StatusCode(201);
