@@ -1,0 +1,52 @@
+<view class="container">
+  <!-- 用户信息卡片 -->
+  <view class="user-card">
+    <image src="{{userInfo.avatarUrl || '/images/default-avatar.png'}}" class="avatar"></image>
+    <view class="user-info">
+      <text class="username">{{userInfo.nickName || '未登录'}}</text>
+      <text class="phone">{{userInfo.phone || '未绑定手机号'}}</text>
+    </view>
+    <button wx:if="{{!userInfo.nickName}}" class="login-btn" bindtap="navigateToLogin">登录/注册</button>
+  </view>
+
+  <!-- 收藏店铺列表 -->
+  <view class="favorite-section">
+    <view class="section-header">
+      <text class="section-title">我的收藏</text>
+      <text class="count">({{favoriteList.length}})</text>
+    </view>
+
+    <block wx:if="{{favoriteList.length > 0}}">
+      <scroll-view scroll-y class="favorite-list" enable-back-to-top>
+        <block wx:for="{{favoriteList}}" wx:key="id">
+          <view class="favorite-item">
+            <view class="item-content" bindtap="navigateToDetail" data-id="{{item.id}}">
+              <image src="{{item.image}}" class="food-image" mode="aspectFill"></image>
+              <view class="item-info">
+                <text class="food-name">{{item.name}}</text>
+                <view class="meta-info">
+                  <view class="rating">
+                    <image src="/images/favorite-filled.png" class="star-icon"></image>
+                    <text>{{item.rating}}</text>
+                  </view>
+                  <view class="category-tag">{{item.category || '美食'}}</view>
+                </view>
+                <view class="price-range">人均 ¥{{item.price || '50-80'}}</view>
+              </view>
+            </view>
+            <view wx:if="{{isEditing}}" class="delete-btn" bindtap="removeFavorite" data-id="{{item.id}}">
+              <image src="/images/delete-icon.png" class="delete-icon"></image>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </block>
+
+    <view wx:else class="empty-tip">
+      <image src="/images/empty-favorite.png" class="empty-image"></image>
+      <text class="empty-text">暂无收藏店铺</text>
+      <text class="sub-tip">发现美食并收藏，下次更容易找到</text>
+      <button class="browse-btn" bindtap="navigateToIndex">去逛逛</button>
+    </view>
+  </view>
+</view>
