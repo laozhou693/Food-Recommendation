@@ -1,0 +1,84 @@
+{
+    "style_exp_info": [],
+    "scheme": "https://h5.waimai.meituan.com/waimai/mindex/menu?mtShopId=-100&poi_id_str=o7h0hEasU4zdG3pzJ8OpbQI",
+    "distance": "1.5km",
+    "ad_type": 0,
+    "min_price_tip": "起送 ¥20",
+    "delivery_time_tip": "40分钟",
+    "poi_pic": "http://p0.meituan.net/waimaipoi/1b00f15547b4bb36098ed7544d90251f72383.jpg",
+    "badge_tag": {
+        "text_right_icon": "",
+        "background_color": "",
+        "text_icon": "",
+        "forward_url": "",
+        "text": "金牌店铺",
+        "text_color": "",
+        "type": 1,
+        "label_id": 155,
+        "url": "http://p0.meituan.net/scarlett/44201eeb2eb545ae0315fe4479adcad24914.png"
+    },
+    "img_style": 1,
+    "expand_style_info": {
+        "golden_sign": 0
+    },
+    "poi_id_str": "o7h0hEasU4zdG3pzJ8OpbQI",
+    "page_show_style": 0,
+    "poi_name": "必胜客（珞珈国际店）",
+    "delivery_type": 0,
+    "coupon_tag": {
+        "text_right_icon": "",
+        "background_color": "",
+        "text_icon": "",
+        "forward_url": "",
+        "text": "神券",
+        "text_color": "",
+        "type": 1,
+        "label_id": 158,
+        "url": "http://p0.meituan.net/scarlett/7292d67d47b883c8f8fee49dcc332f8f3078.png"
+    },
+    "brightspot_tags": [
+        {
+            "view_expose_info": {
+                "activity_type": "0",
+                "template_id": "0",
+                "entry_item_id": "0"
+            },
+            "text_right_icon": "",
+            "background_color": "#FFF8E1",
+            "text_icon": "",
+            "forward_url": "",
+            "text": "“满满的幸福”",
+            "text_color": "#ff8000",
+            "type": 0,
+            "label_id": 75,
+            "url": ""
+        },
+        {
+            "text_right_icon": "",
+            "background_color": "#FFF8E1",
+            "text_icon": "",
+            "forward_url": "",
+            "text": "大众点评高分店铺",
+            "text_color": "#ff8000",
+            "type": 0,
+            "label_id": 2,
+            "url": ""
+        }
+    ],
+    "wm_poi_score": 4.8,
+    "img_type": 1,
+    "shipping_fee_tip": "配送 约¥5",
+    "status_desc": "",
+    "avg_price_tip": "人均 ¥42",
+    "wm_poi_id": -100,
+    "delivery_info": {
+        "delivery_type": 0,
+        "delivery_icon": ""
+    },
+    "charge_info": "",
+    "month_sales_tip": "月售1000+",
+    "list_style": 0,
+    "origin_shipping_fee_tip": "",
+    "status": 1,
+    "status_sub_desc": ""
+}
