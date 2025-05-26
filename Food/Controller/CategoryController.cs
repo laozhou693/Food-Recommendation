@@ -23,7 +23,15 @@ namespace Food.Controller
         public async Task<IActionResult> GetAll()
         {
             var categories = await _categoryRepository.GetAllAsync();
-            return Ok(categories);
+            return Ok(new
+            {
+                statusCode = StatusCodes.Status200OK,
+                message = "",
+                data = new
+                {
+                    Categories=categories
+                }
+            });
         }
 
         // 按类型获取分类
@@ -31,7 +39,15 @@ namespace Food.Controller
         public async Task<IActionResult> GetByType(CategoryType type)
         {
             var categories = await _categoryRepository.GetByTypeAsync(type);
-            return Ok(categories);
+            return Ok(new
+            {
+                statusCode = StatusCodes.Status200OK,
+                message = "",
+                data = new
+                {
+                    Categories = categories
+                }
+            });
         }
 
         // 获取特定分类的商家
@@ -39,7 +55,17 @@ namespace Food.Controller
         public async Task<IActionResult> GetMerchantsByTag(string tag)
         {
             var merchants = await _merchantRepository.GetByTagAsync(tag);
-            return Ok(new { tag, count = merchants.Count, merchants });
+            return Ok(new
+            {
+                statusCode = StatusCodes.Status200OK,
+                message = "",
+                data = new
+                {
+                    Tag=tag,
+                    Count=merchants.Count,
+                    Merchants=merchants
+                }
+            });
         }
     }
 }

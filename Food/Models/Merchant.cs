@@ -21,9 +21,9 @@ namespace Food.Models
         [BsonElement("rating")]
         public double Rating { get; set; }
         [BsonElement("ratingEle")]
-        public double RstingEle { get; set; }
+        public double RatingEle { get; set; }
         [BsonElement("ratingMeituan")]
-        public double RstingMeituan { get; set; }
+        public double RatingMeituan { get; set; }
 
         [BsonElement("distance")]
         public int Distance { get; set; } // 距离（米）
@@ -40,7 +40,7 @@ namespace Food.Models
         [BsonElement("priceMeituan")]
         public string PriceMeituan { get; set; } = string.Empty;
 
-        [BsonElement("tags")]
+        [BsonElement("catogery")]
         public List<string> Tags { get; set; } = new List<string>(); // 分类标签
 
         [BsonElement("favoriteCount")]
@@ -61,8 +61,5 @@ namespace Food.Models
 
         [BsonElement("reasons")]
         public List<string> Reasons { get; set; } = new List<string>();
-
-        [BsonElement("catogery")]
-        public List<string> Catogery {  get; set; }= new List<string>();
     }
 }

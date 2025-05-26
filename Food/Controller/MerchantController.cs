@@ -78,37 +78,69 @@ namespace Food.Controller
         [HttpGet("search")]
         public async Task<IActionResult> Search([FromQuery] string keyword)
         {
+            Console.WriteLine($"{keyword}");
             if (string.IsNullOrWhiteSpace(keyword))
             {
-                return BadRequest(new { message = "关键词不能为空" });
+                var _merchants= await _merchantRepository.GetAllAsync();
+                return Ok(_merchants);
             }
 
             var merchants = await _merchantRepository.SearchAsync(keyword);
             return Ok(merchants);
         }
 
-        // 综合推荐商家
-        [HttpGet("recommended")]
-        public async Task<IActionResult> GetRecommended([FromQuery] int limit = 20)
+        [HttpGet("types")]
+        public async Task<IActionResult> GetMerchants([FromQuery] string type = "recommended", [FromQuery] int limit = 20)
         {
-            var merchants = await _merchantRepository.GetRecommendedAsync(limit);
-            return Ok(merchants);
-        }
+            try
+            {
+                List<Merchant> merchants;
 
-        // 距离最近商家
-        [HttpGet("nearest")]
-        public async Task<IActionResult> GetNearest([FromQuery] int limit = 20)
-        {
-            var merchants = await _merchantRepository.GetNearestAsync(limit);
-            return Ok(merchants);
-        }
-
-        // 评分最高商家
-        [HttpGet("highest-rated")]
-        public async Task<IActionResult> GetHighestRated([FromQuery] int limit = 20)
-        {
-            var merchants = await _merchantRepository.GetHighestRatedAsync(limit);
-            return Ok(merchants);
+                switch (type.ToLower())
+                {
+                    case "recommended":
+                        merchants = await _merchantRepository.GetRecommendedAsync(limit);
+                        return Ok(new
+                        {
+                            statusCode = StatusCodes.Status200OK,
+                            message = "获取推荐商家列表成功",
+                            data = merchants
+                        });
+                    case "nearest":
+                        merchants = await _merchantRepository.GetNearestAsync(limit);
+                        return Ok(new
+                        {
+                            statusCode = StatusCodes.Status200OK,
+                            message = "获取最近商家列表成功",
+                            data = merchants
+                        });
+                    case "highest-rated":
+                        merchants = await _merchantRepository.GetHighestRatedAsync(limit);
+                        return Ok(new
+                        {
+                            statusCode = StatusCodes.Status200OK,
+                            message = "获取最高评分商家列表成功",
+                            data = merchants
+                        });
+                    default:
+                        return BadRequest(new
+                        {
+                            statusCode = StatusCodes.Status400BadRequest,
+                            message = "无效的类型参数",
+                            data = (object?)null
+                        });
+                }
+            }
+            catch (Exception ex)
+            {
+                //_logger.LogError(ex, "获取商家列表失败");
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    statusCode = StatusCodes.Status500InternalServerError,
+                    message = "服务器内部错误",
+                    data = (object?)null
+                });
+            }
         }
     }
 }

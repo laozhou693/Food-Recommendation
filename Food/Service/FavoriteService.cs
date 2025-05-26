@@ -69,5 +69,12 @@ namespace Food.Service
             var favorites = await _userRepository.GetFavoritesAsync(userId);
             return favorites.Contains(merchantId);
         }
+
+        // 查询商家被收藏的次数
+        public async Task<int> GetFavoriteCountAsync(string merchantId)
+        {
+            var merchant = await _merchantRepository.GetByIdAsync(merchantId);
+            return merchant?.FavoriteCount ?? 0;
+        }
     }
 }
