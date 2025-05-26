@@ -26,33 +26,54 @@ namespace FoodRecommendationSystem.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                _logger.LogWarning("Register model state invalid: {Errors}", ModelState.Errors());
+                return BadRequest(new ErrorResponse { Message = "输入数据格式不正确", Details = ModelState.Errors() });
             }
 
-            var result = await _authService.RegisterAsync(model.Username, model.Password);
-
-            if (!result.Success)
+            try
             {
-                return BadRequest(new ErrorResponse { Message = result.Message });
-            }
+                var result = await _authService.RegisterAsync(model.Username, model.Password);
 
-            User? user = result.User;
-            if (user == null)
-            {
-                return BadRequest(new ErrorResponse { Message = "用户信息不可用" });
-            }
-
-            return Ok(new RegisterResponse
-            {
-                Message = result.Message,
-                User = new UserDto
+                if (!result.Success)
                 {
-                    Id = user.Id,
-                    Username = user.Username
+                    _logger.LogInformation("Registration failed for {Username}: {Reason}", model.Username, result.Message);
+                    return BadRequest(new ErrorResponse { Message = result.Message });
                 }
-            });
-        }
 
+                var user = result.User;
+                if (user == null)
+                {
+                    _logger.LogError("Registration succeeded but returned user is null for {Username}", model.Username);
+                    return StatusCode(StatusCodes.Status500InternalServerError,
+                        new ErrorResponse { Message = "用户注册成功但用户信息不可用" });
+                }
+
+                _logger.LogInformation("User registered successfully: {Username} (Id: {UserId})", user.Username, user.Id);
+
+                return Ok(new RegisterResponse
+                {
+                    Message = result.Message,
+                    User = new UserDto
+                    {
+                        Id = user.Id,
+                        Username = user.Username
+                    }
+                });
+            }
+            catch (DbUpdateException dbEx)
+            {
+                _logger.LogError(dbEx, "Database error during registration for {Username}", model.Username);
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new ErrorResponse { Message = "数据库错误，注册失败，请稍后重试" });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Unexpected error during registration for {Username}", model.Username);
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new ErrorResponse { Message = "发生未知错误，注册失败，请联系我们的支持团队" });
+            }
+        }
+    }
         [HttpPost("login")]
         [ProducesResponseType(typeof(LoginResponse), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status400BadRequest)]
@@ -89,5 +110,13 @@ namespace FoodRecommendationSystem.Controllers
                 }
             });
         }
+        public static class ModelStateExtensions
+    {
+        public static string Errors(this ModelStateDictionary state)
+        {
+            return string.Join("; ", state.Values
+                .SelectMany(v => v.Errors)
+                .Select(e => e.ErrorMessage));
+        }
     }
-}
+    }
