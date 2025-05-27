@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|c:\\users\\lenovo\\desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\food\\models\\merchant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|solutionrelative:models\\merchant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|c:\\users\\lenovo\\desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\food\\controller\\merchantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|solutionrelative:controller\\merchantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|c:\\users\\lenovo\\desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\food\\repository\\merchantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|solutionrelative:repository\\merchantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|c:\\users\\lenovo\\desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\food\\controller\\favoritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|solutionrelative:controller\\favoritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|c:\\users\\lenovo\\desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\food\\controller\\merchantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|solutionrelative:controller\\merchantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|c:\\users\\lenovo\\desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\food\\service\\favoriteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|solutionrelative:service\\favoriteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|c:\\users\\lenovo\\desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\food\\models\\merchant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|solutionrelative:models\\merchant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|c:\\users\\lenovo\\desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\food\\controller\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|solutionrelative:controller\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|c:\\users\\lenovo\\desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\food\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3DBBDEFD-9D0A-4417-91E4-13EFD292E29B}|Food.csproj|c:\\users\\lenovo\\desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\food\\controller\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,32 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAABoAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-26T18:00:22.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FavoriteService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Service\\FavoriteService.cs",
-              "RelativeDocumentMoniker": "Service\\FavoriteService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Service\\FavoriteService.cs",
-              "RelativeToolTip": "Service\\FavoriteService.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAEwE0AAAAJAAAA",
+              "DocumentIndex": 1,
+              "Title": "MerchantRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Repository\\MerchantRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\MerchantRepository.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Repository\\MerchantRepository.cs",
+              "RelativeToolTip": "Repository\\MerchantRepository.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T15:21:30.846Z",
+              "WhenOpened": "2025-05-27T04:30:47.737Z",
               "EditorCaption": ""
             },
             {
@@ -78,27 +61,27 @@
               "RelativeDocumentMoniker": "Controller\\CategoryController.cs",
               "ToolTip": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Controller\\CategoryController.cs",
               "RelativeToolTip": "Controller\\CategoryController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAIwEMAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T16:35:30.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MerchantController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Controller\\MerchantController.cs",
               "RelativeDocumentMoniker": "Controller\\MerchantController.cs",
               "ToolTip": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Controller\\MerchantController.cs",
               "RelativeToolTip": "Controller\\MerchantController.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAAAFUAAAANAAAA",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAuwFQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T16:12:46.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Controller\\AuthController.cs",
               "RelativeDocumentMoniker": "Controller\\AuthController.cs",
@@ -106,38 +89,37 @@
               "RelativeToolTip": "Controller\\AuthController.cs",
               "ViewState": "AQIAAEsAAAAAAAAAAAAYwIcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T14:16:41.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T14:16:41.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FavoriteController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Controller\\FavoriteController.cs",
               "RelativeDocumentMoniker": "Controller\\FavoriteController.cs",
               "ToolTip": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Controller\\FavoriteController.cs",
               "RelativeToolTip": "Controller\\FavoriteController.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAUwIUAAABKAAAA",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAuwJ4AAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T11:26:21.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Merchant.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Models\\Merchant.cs",
               "RelativeDocumentMoniker": "Models\\Merchant.cs",
               "ToolTip": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\Food-Recommendation\\Food\\Models\\Merchant.cs",
               "RelativeToolTip": "Models\\Merchant.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAQwBQAAAAfAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAtwC4AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T11:23:06.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Food.csproj",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\\u4E0A\u8BFE\\\u5927\u4E8C\u4E0B\\\u8F6F\u4EF6\\food-recommendation\\Food\\Food.csproj",
               "RelativeDocumentMoniker": "Food.csproj",
@@ -145,8 +127,7 @@
               "RelativeToolTip": "Food.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-26T11:23:00.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T11:23:00.06Z"
             }
           ]
         }

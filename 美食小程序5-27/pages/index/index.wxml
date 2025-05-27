@@ -1,0 +1,89 @@
+<view class="container">
+  <!-- 搜索栏 -->
+  <view class="search-bar">
+    <input 
+      placeholder="搜索美食..." 
+      placeholder-class="placeholder"
+      bindinput="handleSearchInput"
+      value="{{searchKeyword}}"
+    />
+    <button bindtap="handleSearch" size="mini">搜索</button>
+  </view>
+  
+  <!-- 筛选栏 -->
+  <view class="filter-bar">
+    <picker mode="selector" range="{{filterOptions}}" range-key="label" bindchange="handleFilterChange">
+      <view class="filter-item">
+        {{filterOptions[filterIndex].label}}
+        <image src="/images/arrow-down.png" class="arrow"></image>
+      </view>
+    </picker>
+    
+    <view class="sort-options">
+      <text 
+        class="{{sortType === 'recommended' ? 'active' : ''}}" 
+        bindtap="changeSortType" 
+        data-type="recommended"
+      >
+        今日推荐
+      </text>
+      <text 
+        class="{{sortType === 'nearest' ? 'active' : ''}}" 
+        bindtap="changeSortType" 
+        data-type="nearest"
+      >
+        距离最近
+      </text>
+      <text 
+        class="{{sortType === 'highest-rated' ? 'active' : ''}}" 
+        bindtap="changeSortType" 
+        data-type="highest-rated"
+      >
+        评分最高
+      </text>
+    </view>
+  </view>
+  
+  <!-- 美食列表 -->
+  <scroll-view 
+    scroll-y 
+    class="food-list" 
+    bindscroll="handleScroll"
+    scroll-top="{{scrollTop}}"
+  >
+    <block wx:for="{{foodList}}" wx:key="id">
+      <view class="food-item" bindtap="navigateToDetail" data-merchant="{{item}}">
+        <image src="{{item.image}}" class="food-image" mode="aspectFill"></image>
+        <view class="food-info">
+          <view class="food-name">{{item.name}}</view>
+          <view class="food-desc">{{item.description}}</view>
+          <view class="food-tags">
+            <text wx:for="{{item.tags}}" wx:key="*this">{{item}}</text>
+          </view>
+          <view class="price-comparison">
+            <view class="platform-price">
+              <image src="/images/eleme-logo.png" class="platform-logo"></image>
+              <text style="font-size: 20rpx;">{{item.priceEle}}</text>
+            </view>
+            <view class="platform-price">
+              <image src="/images/meituan-logo.png" class="platform-logo"></image>
+              <text style="font-size: 20rpx;">{{item.priceMeituan}}</text>
+            </view>
+          </view>
+          <view class="food-meta">
+            <text class="ratingEle">{{item.ratingEle}}</text>
+            <text class="ratingMeituan">{{item.ratingMeituan}}</text>
+            <text class="distance">{{item.distance}}m</text>
+            <text class="rating">{{item.favoriteCount}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+    
+    <view wx:if="{{isLoading}}" class="loading">
+      <image src="/images/loading.gif" mode="widthFix" style="width: 60rpx; height: 60rpx;"></image>
+      加载中...
+    </view>
+    <view wx:if="{{!hasMore}}" class="no-more">没有更多了</view>
+  </scroll-view>
+</view>

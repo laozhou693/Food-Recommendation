@@ -76,17 +76,31 @@ namespace Food.Controller
         }
         // 搜索商家
         [HttpGet("search")]
-        public async Task<IActionResult> Search([FromQuery] string keyword)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Search([FromQuery] string keyword, [FromQuery] string tag = null)
         {
-            Console.WriteLine($"{keyword}");
-            if (string.IsNullOrWhiteSpace(keyword))
+            // 1. 参数校验
+            if (string.IsNullOrWhiteSpace(keyword) && string.IsNullOrWhiteSpace(tag))
             {
-                var _merchants= await _merchantRepository.GetAllAsync();
-                return Ok(_merchants);
+                return BadRequest(new
+                {
+                    statusCode = StatusCodes.Status400BadRequest,
+                    message = "关键词或标签不能为空",
+                    data = (object?)null  // 明确表示可为 null
+                });
             }
 
-            var merchants = await _merchantRepository.SearchAsync(keyword);
-            return Ok(merchants);
+            // 2. 搜索商家
+            var merchants = await _merchantRepository.SearchAsync(keyword, tag);
+
+            // 3. 返回成功响应
+            return Ok(new
+            {
+                statusCode = StatusCodes.Status200OK,
+                message = "搜索成功",
+                data = merchants  // 直接返回查询结果
+            });
         }
 
         [HttpGet("types")]

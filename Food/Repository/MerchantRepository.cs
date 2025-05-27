@@ -40,9 +40,29 @@ namespace Food.Repository
         }
 
         // 关键词搜索
-        public async Task<List<Merchant>> SearchAsync(string keyword)
+        public async Task<List<Merchant>> SearchAsync(string keyword, string tag = null)
         {
-            var filter = Builders<Merchant>.Filter.Regex(m => m.Name, new BsonRegularExpression(keyword, "i"));
+            var filter = Builders<Merchant>.Filter.Empty;
+
+            // 如果提供了关键词，则添加关键词过滤条件
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                if (keyword != "空值")
+                {
+                    filter &= Builders<Merchant>.Filter.Regex(m => m.Name, new BsonRegularExpression(keyword, "i"));
+                }
+            }
+
+            // 如果提供了标签，则添加标签过滤条件
+            if (!string.IsNullOrWhiteSpace(tag))
+            {
+                if (tag != "全部分类")
+                {
+                     filter &= Builders<Merchant>.Filter.AnyEq(m => m.Tags,tag);
+                }
+            }
+
+            // 执行查询
             return await _merchants.Find(filter).ToListAsync();
         }
 
