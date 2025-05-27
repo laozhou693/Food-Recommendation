@@ -1,0 +1,5 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "美食推荐",
+  "enablePullDownRefresh": true
+}
