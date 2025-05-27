@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FLblb7mpMjYC6kWFsEfM9cTRXeX4uJPB9JfYm4zs717bocJoUK5m5qjCzJBVKTWRcwe4wt0M3eaiUCOQRxlWVw==",
+  "dgSpecHash": "sIuxjKCbZA2MluPRP6FTiie7wrCBsroZMnk37xlHhKuu6gkf4FY5hv6eB1p4z+Rd/570RrQTgdLvXeRGnttMkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lenovo\\Desktop\\上课\\大二下\\软件\\food-recommendation\\Food\\Food.csproj",
+  "projectFilePath": "C:\\Users\\lenovo\\Desktop\\Food-Recommendation\\Food\\Food.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",

@@ -1493,11 +1493,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\上课\\大二下\\软件\\Food-Recommendation\\Food\\Food.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\Food-Recommendation\\Food\\Food.csproj",
       "projectName": "Food",
-      "projectPath": "C:\\Users\\lenovo\\Desktop\\上课\\大二下\\软件\\Food-Recommendation\\Food\\Food.csproj",
+      "projectPath": "C:\\Users\\lenovo\\Desktop\\Food-Recommendation\\Food\\Food.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\Desktop\\上课\\大二下\\软件\\Food-Recommendation\\Food\\obj\\",
+      "outputPath": "C:\\Users\\lenovo\\Desktop\\Food-Recommendation\\Food\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

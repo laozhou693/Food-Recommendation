@@ -52,7 +52,7 @@
     scroll-top="{{scrollTop}}"
   >
     <block wx:for="{{foodList}}" wx:key="id">
-      <view class="food-item" bindtap="navigateToDetail" data-merchant="{{item}}">
+      <view wx:if="{{item.image[0]=='h'}}" class="food-item" bindtap="navigateToDetail" data-merchant="{{item}}">
         <image src="{{item.image}}" class="food-image" mode="aspectFill"></image>
         <view class="food-info">
           <view class="food-name">{{item.name}}</view>
